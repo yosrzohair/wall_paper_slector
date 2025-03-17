@@ -1,0 +1,60 @@
+Steps to Solve the Task
+
+1. Understanding the Requirements
+
+The program takes two command-line arguments: latitude and longitude.
+
+It determines the current time in UTC.
+
+It calculates the sunrise and sunset times for the given location.
+
+It selects an appropriate wallpaper based on whether the sun is above or below the horizon.
+
+It prints the selected image file name as output.
+
+2. Getting the Current Time
+
+The program retrieves the current system time in UTC to ensure accuracy.
+
+3. Calculating Sunrise and Sunset
+
+To determine whether it is day or night, the program calculates sunrise and sunset times based on the given latitude and longitude.
+
+It uses mathematical formulas or an API to compute these times.
+
+4. Selecting the Wallpaper
+
+If the current time is before sunrise or after sunset, the program selects night.png.
+
+Otherwise, it determines the appropriate time of day (e.g., morning, noon, evening) and selects the corresponding image.
+
+5. Implementation Details
+
+The program is written in Python.
+
+It does not use external libraries except for standard ones allowed in the task.
+
+The image set is stored in an images/ directory.
+
+The output is printed in stdout as required by the task.
+
+6. Execution Example
+
+yosr@LENOVOS142M2N:/mnt/c/wallpaper_selector$ python3 wallpaper_selector.py 31.9544 35.9106
+night.png
+
+This indicates that the sun is below the horizon at the provided coordinates, so night.png is selected.
+
+7. Testing and Verification
+
+The program was tested with different locations and times.
+
+The results were cross-checked with online sunrise/sunset calculators.
+
+The logic was verified to ensure correctness.
+
+Conclusion
+
+This solution successfully meets the requirements by selecting the correct wallpaper based on the sun's position at a given location. The approach is efficient, accurate, and adheres to the task constraints.
+
+Prepared by: Yosr Dirani ^_^
